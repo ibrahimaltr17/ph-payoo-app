@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Payoo</title>
+</head>
+<body class="bg-slate-800">
+    <!-- Header Section -->
+    <section class="min-h-screen max-w-[430px] mx-auto bg-white">
+        <header>
+            <nav class="flex justify-center">
+                <div class="image flex justify-center">
+                    <img class="mx-auto mt-10 relative" src="image/bg.png" alt="">
+                    <img class="absolute top-25" src="image/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Section -->
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                    <form action="">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-black">Mobile Number</label>
+                            <input id="account-number" type="number" class="input appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" placeholder="Enter Your Number" required/>
+                            <label class="fieldset-label font-bold text-black">4 Digit PIN</label>
+                            <input  id="pin" type="number" class="input appearance-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none" placeholder="Enter 4 Digit PIN" required/>
+                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                          </fieldset>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+</html>

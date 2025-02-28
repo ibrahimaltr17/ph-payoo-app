@@ -1,0 +1,65 @@
+document.getElementById('cash-out-option').style.display='none'
+document.getElementById('transaction').style.display='none'
+document.getElementById('transfer-option').style.display='none'
+document.getElementById('payment-option').style.display='none'
+document.getElementById('bonus-option').style.display='none'
+document.getElementById('addMoney-btn').addEventListener('click',
+    function(event){
+        displayStatus('add-money-option','block');
+        displayStatus('cash-out-option','none');
+        displayStatus('transaction','none');
+        displayStatus('transfer-option','none');
+        displayStatus('payment-option','none');
+        displayStatus('bonus-option','none');
+    }
+);
+document.getElementById('cash-out-btn').addEventListener('click', 
+    function(event){
+        displayStatus('add-money-option','none');
+        displayStatus('cash-out-option','block');
+        displayStatus('transaction','none');
+        displayStatus('transfer-option','none');
+        displayStatus('payment-option','none');
+        displayStatus('bonus-option','none');
+    }
+);
+document.getElementById('transfer-btn').addEventListener('click', 
+    function(){
+        displayStatus('transaction','none');
+        displayStatus('add-money-option','none');
+        displayStatus('cash-out-option','none');
+        displayStatus('transfer-option','block');
+        displayStatus('payment-option','none');
+        displayStatus('bonus-option','none');
+    }
+)
+document.getElementById('bonus-btn').addEventListener('click', 
+    function(){
+        displayStatus('transaction','none');
+        displayStatus('add-money-option','none');
+        displayStatus('cash-out-option','none');
+        displayStatus('transfer-option','none');
+        displayStatus('payment-option','none');
+        displayStatus('bonus-option','block');
+    }
+)
+document.getElementById('payment-btn').addEventListener('click', 
+    function(){
+        displayStatus('transaction','none');
+        displayStatus('add-money-option','none');
+        displayStatus('cash-out-option','none');
+        displayStatus('transfer-option','none');
+        displayStatus('payment-option','block');
+        displayStatus('bonus-option','none');
+    }
+)
+document.getElementById('transaction-btn').addEventListener('click', 
+    function(){
+        displayStatus('transaction','block');
+        displayStatus('add-money-option','none');
+        displayStatus('cash-out-option','none');
+        displayStatus('transfer-option','none');
+        displayStatus('payment-option','none');
+        displayStatus('bonus-option','none');
+    }
+)
