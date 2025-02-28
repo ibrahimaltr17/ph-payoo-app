@@ -18,7 +18,7 @@ document.getElementById('transfer-apply-btn').addEventListener('click',
                     </div>
                     <div class="">
                         <h3 class="font-bold">Transfer Money</h3>
-                        <p>Transfered <span class="font-semibold">${transferAmount}</span> USD to account: ${transferAccount}</p> 
+                        <p>Transferred <span class="font-semibold">${transferAmount}</span> USD to account: ${transferAccount}</p> 
                     </div>
                     </div>
                     `

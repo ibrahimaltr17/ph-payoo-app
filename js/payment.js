@@ -18,8 +18,8 @@ document.getElementById('payment-apply-btn').addEventListener('click',
                         <img src="image/purse1.png" alt="">
                     </div>
                     <div class="">
-                        <h3 class="font-bold">Cash Out</h3>
-                        <p>Paid ${payAmount} USD for ${paymentType} to ${billerAccount} </p> 
+                        <h3 class="font-bold">Payment</h3>
+                        <p>Paid<span class="font-semibold">${payAmount}</span> USD for ${paymentType} to ${billerAccount} </p> 
                     </div>
                     </div>
                     `
